@@ -1,0 +1,77 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+.choice-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.choice-grid div{
+    width: calc(32.5% - 2*10px - 2 * 1px);
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.choice-grid img{
+    width: 100%;
+    object-fit: cover;
+    height: 90%;
+}
+
+.hidden{
+    display: none;
+}
+
+#risultatoFinale{
+    border: 2px solid black;
+    padding: 10px;
+    font-family: Verdana;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+
+#risultatoh1{
+    font-size: 30px;
+}
+
+#restart{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.choice-grid div.selezionato{
+    background-color: #cfe3ff;
+    opacity: 1;
+}
+
+.unselected{
+    opacity: 0.5;
+}
+
+
+@media(max-width: 700px){
+    article{
+        width: 95%;
+    }
+
+    header div{
+        display: none;
+    }
+}
+
+@media(max-width: 500px){
+    .choice-grid div{
+        width: calc(49% - 2*10px - 2 * 1px);
+    }
+}
+
+
+
+
+
+
+
+
+
